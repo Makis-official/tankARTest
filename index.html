@@ -9,17 +9,17 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: ./minds/tanks.mind; maxTrack: 2" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="t34" src="./t-34-85_war_thunder//scene.gltf"></a-asset-item>
+        <a-asset-item id="t34" src="./t-34-85_war_thunder/scene.gltf"></a-asset-item>
         <a-asset-item id="t35" src="./t-35_heavy_five-turret_tank/scene.gltf"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#t34" animation-mixer>
+        <a-gltf-model rotation="90 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#t35" animation-mixer>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model rotation="90 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#t35" animation-mixer>
+        <a-gltf-model rotation="90 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#t34" animation-mixer>
       </a-entity>
     </a-scene>
   </body>
